@@ -6,7 +6,7 @@ class Phase(models.Model):
     description = models.TextField()
     start_date = models.DateField()
     end_date = models.DateField()
-    project_id = models.ForeignKey(Project, on_delete=models.CASCADE)
+    project = models.ForeignKey(Project, on_delete=models.CASCADE)
     
     def __str__(self):
         return self.name

@@ -22,5 +22,7 @@ urlpatterns = [
     path('api/', include('projects.urls')),
     path('api/', include('phases.urls')),
     path('api/', include('tasks.urls')),
-    path('api/', include('workers.urls'))
+    path('api/', include('roles.urls')),
+    path('api/', include('workers.urls')),
+    path('api/', include('task_assignment.urls'))
 ]
